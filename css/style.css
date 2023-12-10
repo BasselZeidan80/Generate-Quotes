@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500&family=Amatic+SC:wght@400;700&family=Cairo:wght@400;600;900&family=Inter:wght@100;200;300;400;500;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600&family=Roboto+Slab:wght@300;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+body {
+    background-color: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans', sans-serif;
+
+}
+
+.home {
+    margin-top: 30px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.container p {
+    padding-block: 20px;
+    font-size: 20px;
+}
+
+.container .info {
+    padding-block: 20px;
+}
+
+.container .info h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.container .info p {
+    font-weight: 500;
+}
+
+.container button {
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: all .5s;
+    background-color: #ff8c00f5;
+    border: 1px solid #ff8c00f5;
+    font-size: 18px;
+}
+
+.container button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ff8c00f5;
+
+
+}
+
+.circle {
+
+    margin: auto;
+    margin-bottom: 40px;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    /* background-color: #ff000052; */
+    border: 5px solid #FF8C00;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.caption p {
+    font-size: 1.5rem;
+    color: #fdfdfb;
+}
+
+.nameCircle {
+    position: absolute;
+    bottom: 0;
+    left: 70%;
+    background-color: #FF8C00;
+    border: 2px solid #FF8C00;
+    padding: 0 5px;
+    color: #000;
+
+    border-radius: 0px 20px 0px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 630px) {
+    .circle {
+        height: 300px;
+        width: 300px;
+    }
+
+    .icon i {
+        background-color: #fff;
+        font-size: 30px;
+        padding: 5px 20px;
+        margin: 0;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+
+    }
+
+    .nameCircle {
+        bottom: -20px;
+        left: 70%;
+        padding: 0;
+
+    }
+
+    .caption p {
+        font-size: 1.2rem;
+    }
+}
+
+#images {
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -555;
+}
+
+#images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+#images::after {
+    content: "";
+    position: absolute;
+    background-color: #0a0a0a91;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+
+}
+
+.icon {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 55px;
+    color: #FF8C00;
+    font-size: 50px;
+    position: absolute;
+    top: -3%;
+    left: 15%;
+}
+
+.caption {
+    /* background-color: #ffffffbb; */
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+}
